@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Hero} from "./hero";
+import {Hero} from './hero';
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice'},
@@ -24,7 +24,8 @@ const HEROES: Hero[] = [
         [class.selected]="hero === selectedHero">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
-  </ul>` ,
+  </ul>
+  <hero-detail [hero]="selectedHero"></hero-detail>` ,
   styles: [`
     .selected {
       background-color: #CFD8DC !important;
