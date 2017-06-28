@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail.component';
 
-import { AppComponent }  from './app.component';
+import { HeroesComponent }  from './heroes.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent,
+  declarations: [ HeroesComponent,
                   HeroDetailComponent],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ HeroesComponent ]
 })
 export class AppModule { }
